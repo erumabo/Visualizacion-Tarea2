@@ -10,6 +10,7 @@ var svg = container
   .append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
   .attr("viewBox", "0 0 " + width + " " + height)
+  .attr("onclick","redo()")
   .classed("svg-content-responsive", true);
 
 var sites = d3.range(samples)
@@ -40,4 +41,23 @@ function color (d) {
   var dx = d[0] - width / 2,
     dy = d[1] - height / 2;
   return d3.lab(100 - (dx * dx + dy * dy) / 5000, dx / 10, dy / 10);
+}
+
+function redo(){
+  var sites = d3.range(samples)
+    .map(function() { return [Math.random() * width, Math.random() * height]; });
+  var voronoi = d3.voronoi()
+    .extent([[-1,1], [width + 1, height + 1]]);
+    
+  container.select("svg").remove();
+  var svg = container
+    .append("svg")
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 " + width + " " + height)
+    .attr("onclick","redo()")
+    .classed("svg-content-responsive", true);
+  var polygons = svg.selectAll("path")
+    .data(voronoi.polygons(sites))
+    .enter().append("path")
+    .call(redraw);
 }
