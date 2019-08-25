@@ -14,16 +14,16 @@
 }
 
 @media (min-width:600px){
-.sgv-container 
+.svg-container {
   width: 80vh;
-  height: 30vh;
+  height: 60vh;
   vertical-align: top;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightcyan;
-  border: 2px solid tomato;
-}
+  background-color: bisque;
+  border: 2px solid chocolate;
+  }
 }
 
 .svg-content-responsive {
