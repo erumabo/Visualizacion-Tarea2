@@ -1,5 +1,9 @@
+/*
+ *Todo esto queda remplazado por el dropup del bootstrap
+ *
+ */
 /*Funciones*/ 
-function menuEsconder(){
+/*function menuEsconder(){
   $(".dropdown-content").hide();
   /*jQuery power baby*/
   /*
@@ -13,7 +17,7 @@ function menuEsconder(){
   }
   */
 }
-
+/*
 function botonOpciones() { 
   menuEsconder();
   $("#tipoDato").show();
@@ -29,8 +33,9 @@ function botonEfectos(){
 }
   
 /* Desactiva el menu al seleccionar otra parte */
-window.onclick = function(event) {
+/*window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     menuEsconder();
   }
 }
+*/
