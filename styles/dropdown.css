@@ -11,6 +11,13 @@
 .dropdown-menu {
   border:2px solid red; /*unicamente por debug visual*/
 }
+
+.control-btn {
+  z-index:1000;
+  position:fixed;
+  bottom:0;
+  left:0;
+}
 /*
  *Esto queda remplazado por el dropup del Bootstrap
 .dropbtn{

@@ -2,8 +2,8 @@
 .svg-container {
   /*display: inline-block;
   position: relative;*/
-  width: 80vw;
-  height: 60vw; /* 4:3 ratio*/
+  width: 96vw;
+  height: 72vw; /* 4:3 ratio*/
   vertical-align: top;
   overflow: hidden;
   margin-left: auto;
@@ -15,14 +15,14 @@
 
 @media (min-width:600px){
 .svg-container {
-  width: 80vh;
-  height: 60vh;
+  width: 96vh;
+  height: 72vh;
   vertical-align: top;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  background-color: bisque;
-  border: 2px solid chocolate;
+  background-color: tomato;
+  border: 2px solid lightcyan;
   }
 }
 
