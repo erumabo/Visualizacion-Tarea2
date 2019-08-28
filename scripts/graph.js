@@ -42,3 +42,17 @@ canvas.selectAll("circle")
       .attr("transform",d=>{return "translate("+x(d.x)+','+y(d.y)+')'})
       .attr("r",d=>{return d.r})
       .attr("fill",d=>{return d.fill?d.fill:"blue"});
+
+var xslider = document.getElementById("xslider");
+xslider.oninput = function(){
+  x.range([0,this.value]);
+  canvas.selectAll("circle")
+    .data(data).attr("transform",d=>{return "translate("+x(d.x)+','+y(d.y)+')'});
+};
+
+var yslider = document.getElementById("yslider");
+yslider.oninput = function(){
+  y.range([0,this.value]);
+  canvas.selectAll("circle")
+    .data(data).attr("transform",d=>{return "translate("+x(d.x)+','+y(d.y)+')'});
+};
