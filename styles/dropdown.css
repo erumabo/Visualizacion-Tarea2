@@ -1,6 +1,6 @@
 #dropdown-container{
   width:100%;
-  position: fixed;
+  position: absolute;
   bottom:0;
   text-align:center;
   border:2px solid red; /*debug visual*/
@@ -14,9 +14,18 @@
 
 .control-btn {
   z-index:1000;
-  position:fixed;
+  position:relative;
   bottom:0;
   left:0;
+}
+
+#controller {
+  width:100%;
+  position: fixed;
+  bottom:0;
+  border:2px solid green;
+  background-color: green;
+}
 }
 /*
  *Esto queda remplazado por el dropup del Bootstrap

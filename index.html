@@ -17,9 +17,19 @@
   <!-- Progra -->
   
   <h2 style="margin-left:auto;margin-right:auto;text-align:center;">Cantones de Costa Rica</h2>
-    
-  <button class="control-btn btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dropdown-container">Ajustes<span class="caret"></span></button>
-
+  
+  <div class="svg-container">
+    <svg class="chart"></svg>
+  </div>
+  
+  <div id="controller">
+  
+  <div>
+    <label>X range<input type="range" min="10" max="400"></label>
+    <label>Y range<input type="range" min="10" max="400"></label>
+  </div>
+  
+  <button class="control-btn btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dropdown-container">Ajustes</button>
   <div id="dropdown-container" class="collapse">
   <div class="dropup">
     <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones<span class="caret"></span></button>
@@ -47,6 +57,8 @@
   </div>
   </div>
   
+  </div>
+  
   <!-- D3 -->
   <script src="https://cdn.jsdelivr.net/npm/d3@5.5.0/dist/d3.min.js"></script>
   <!-- JQuery -->
@@ -54,14 +66,8 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-  <script>
-    /*
-     *Mover a un archivo aparte
-     */
-    var container = d3.select("body").append("div").classed("svg-container",true);
-    var canvas = container.append("svg").attr("viewbox","0 0 400 400");
-  </script>
+  
+  <script type="text/javascript" src="scripts/graph.js"></script>
 
 </body>
 </html>
