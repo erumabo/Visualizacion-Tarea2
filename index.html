@@ -9,7 +9,8 @@
   <title>D3</title>
   
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/chart.css">
+  <link rel="stylesheet" href="styles/info.css">
   <link rel="stylesheet" href="styles/dropdown.css">
 </head>
 <body>
@@ -24,10 +25,10 @@
   
   <div id="controller">
   
-  <div>
-    <label>X range<input type="range" min="10" max="400" id="xslider"></label>
-    <label>Y range<input type="range" min="10" max="400" id="yslider"></label>
-  </div>
+  <!--div> Los scroller solo crean problemas
+    <label>X range<input type="range" value="200" min="10" max="400" id="xslider"></label>
+    <label>Y range<input type="range" value="200" min="10" max="400" id="yslider"></label>
+  </div-->
   
   <button class="control-btn btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dropdown-container">Ajustes</button>
   <div id="dropdown-container" class="collapse">
@@ -57,6 +58,28 @@
   </div>
   </div>
   
+  </div> <!--Controller-->
+
+  <script type="unknown" id="info-template">
+<div class="card bg-info">
+  <div class="card-header">
+    <button type="button" class="close" aria-label="Close" onclick="$('#info').hide();">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h3>{{fill}}</h3>
+  </div>
+  <div class="card-body">
+    <label>Poblacion {{x}}</label><br>
+    <label>Area {{y}}</label><br>
+    <label>Densidad {{r}}</label><br>
+  </div>
+  <div class="card-footer">
+    <i><small>made with mustache</small></i>
+  </div>
+</div>
+  </script>
+  <div id="info">
+    <!-- Aqui va el template -->
   </div>
   
   <!-- D3 -->
@@ -64,9 +87,11 @@
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Mustache -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
   <script type="text/javascript" src="scripts/graph.js"></script>
 
 </body>
