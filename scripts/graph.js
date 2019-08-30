@@ -59,7 +59,7 @@ function grafica(){
   d3.select(".chart").append("g").classed('yAxis',true).call(yAx).attr("transform", "translate(20,20)");
 }
 
-/*controller del slider x*/
+/*controller del slider x
 $("#xslider").on("input", function(){
   x.range([0,this.value]);
   canvas.selectAll('.gliph')
@@ -72,7 +72,7 @@ $("#yslider").on("input", function(){
   canvas.selectAll('.gliph')
     .data(data).attr("transform",d=>{return 'translate('+(x(d.x)+20)+','+(y(d.y)+20)+')'});
   canvas.selectAll('.yAxis').call(yAx);
-});
+});*/
 
 /*
  *Esta funcion se ecnrga de actualizar el grafo al nuevo simbolo electo del dropdown
@@ -94,10 +94,18 @@ $("#a_glifos").on("click", ()=>{cambio(d3.symbolWye);});
 function info(index){
   var template = $('#info-template').html();
   Mustache.parse(template);
-  var render = Mustache.render(template,data[index]);
+  var d=data[index];
+  d.i=index;
+  var render = Mustache.render(template,d);
   $('#info').html(render);
   $('#info').show();
+  $('#idColor').on('input', function(){
+    console.log(data[index].fill);
+    data[index].fill=(this.value);
+    canvas.selectAll('.gliph')
+      .data(data)
+        .attr("fill",d=>{return d.fill});
+  });
 }
-
 
 grafica();
