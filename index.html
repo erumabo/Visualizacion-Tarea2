@@ -21,6 +21,9 @@
   
   <div class="svg-container">
     <svg class="chart"></svg>
+    <div id="info">
+      <!-- Aqui va el template -->
+    </div>
   </div>
   
   <div id="controller">
@@ -32,14 +35,17 @@
   
   <button class="control-btn btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dropdown-container">Ajustes</button>
   <div id="dropdown-container" class="collapse">
-  <div class="dropup">
+  <div id="scroller" class="bg-primary" style="border-radius:8px 8px;display:inline-block">
+    <label>Tamaño<input type="range" value="100" min="0" max="100" id="sizeSlider"></label>
+  </div>
+  <!--div class="dropup">
     <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones<span class="caret"></span></button>
     <ul id="tipoDato" class="dropdown-menu">
       <li><a href="#area">Area</a></li>
       <li><a href="#poblacion">Población</a></li>
       <li><a href="#densidad">Densidad</a></li>
     </ul>
-  </div>
+  </div-->
   <div class="dropup">
     <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Representación<span class="caret"></span></button>
     <ul id="tipoGrafico" class="dropdown-menu">
@@ -60,28 +66,29 @@
   
   </div> <!--Controller-->
 
+  <div id="leyenda" class="card">
+  </div>
+
   <script type="unknown" id="info-template">
 <div class="card bg-info">
   <div class="card-header">
     <button type="button" class="close" aria-label="Close" onclick="$('#info').hide();">
       <span aria-hidden="true">&times;</span>
     </button>
-    <h3>{{fill}}</h3>
+    <h4>{{canton}}</h4>
   </div>
   <div class="card-body">
-    <label>Poblacion {{x}}</label><br>
-    <label>Area {{y}}</label><br>
-    <label>Densidad {{r}}</label><br>
-    <input type="color" id="idColor"><label>Color</label>
+    <label>Provincia {{provincia}}</label><br>
+    <label>Poblacion {{poblacion}}</label><br>
+    <label>Area {{area}}</label><br>
+    <label>Densidad {{densidad}}</label><br>
+    <input type="color" id="idColor" value="{{fill}}"><label>Color</label>
   </div>
   <div class="card-footer">
     <i><small>made with mustache</small></i>
   </div>
 </div>
   </script>
-  <div id="info">
-    <!-- Aqui va el template -->
-  </div>
   
   <!-- D3 -->
   <script src="https://cdn.jsdelivr.net/npm/d3@5.5.0/dist/d3.min.js"></script>
@@ -92,7 +99,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <!-- Mustache -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-
+  
   <script type="text/javascript" src="scripts/graph.js"></script>
 
 </body>

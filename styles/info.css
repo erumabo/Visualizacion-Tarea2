@@ -1,8 +1,21 @@
 #info {
   display:none;
-  position:fixed;
+  position:absolute;
   top:10px;
   left:10px;
-  width:200px;
+  width:220px;
   height:300px;
+  text-align:left;
+}
+
+#leyenda {
+  width:25%;
+  float:right;
+}
+
+.color-text {
+  opacity:0.4;
+}
+.color-text:hover{
+  opacity:1;
 }
