@@ -1,83 +1,83 @@
-Canton,Area,Poblacion,Densidad
-San Jose,44.62,288054,6445.71
-Alajuela,388.43,254886,656.2
-Desamparados,118.26,208411,1751.31
-San Carlos,3347.98,163745,48.91
-Cartago,287.77,147898,513.95
-Perez Zeledon,1905.51,134534,70.6
-Pococi,2403.49,125962,52.41
-Heredia,282.6,123616,437.42
-Puntarenas,1842.33,115019,62.43
-Goicoechea,31.5,115084,3653.46
-La Union,44.83,99399,2217.24
-Limon,1765.79,94415,53.47
-San Ramon,1018.64,80566,79.09
-Alajuelita,21.17,77603,3665.71
-Turrialba,1642.67,69616,42.38
-Grecia,141.52,65824,465.12
-Curridabat,15.95,65206,4088.15
-Tibas,8.15,64842,7956.07
-Liberia,1436.47,62987,43.85
-Vasquez de Coronado,222.2,60486,272.21
-Aserri,167.1,57892,346.45
-Paraiso,411.91,57743,140.18
-Sarapiqui,2140.54,57147,26.7
-Siquirres,860.19,56786,66.02
-Moravia,28.62,56919,1988.78
-Escazu,34.39,56509,1643.18
-Santa Cruz,1312.27,55104,41.99
-Nicoya,1333.68,50825,38.11
-Montes de Oca,15.16,49132,3240.9
-Santa Ana,61.42,49123,799.79
-San Rafael,48.39,45965,949.89
-Oreamuno,202.31,45473,224.77
-Buenos Aires,2384.22,45244,18.98
-Upala,1580.67,43953,27.81
-Naranjo,126.62,42713,337.33
-Corredores,620.6,41831,67.4
-El Guarco,167.69,41793,249.23
-Guacimo,576.48,41266,71.58
-Barva,53.8,40660,755.76
-Santo Domingo,24.84,40072,1613.2
-Golfito,1753.96,39150,22.32
-Coto Brus,933.91,38453,41.17
-Matina,772.64,37721,48.82
-Carrillo,577.54,37122,64.28
-Santa Barbara,53.21,36243,681.13
-Palmares,38.06,34716,912.14
-Puriscal,553,33004,59.68
-Talamanca,2809.93,30712,10.93
-Osa,1930.24,29433,15.25
-Poas,73.84,29199,395.44
-Esparza,216.8,28644,132.12
-San Pablo,7.53,27671,3674.77
-Quepos,543.77,26861,49.4
-Mora,162.04,26294,162.27
-Canas,682.2,26201,38.41
-Atenas,127.19,25460,200.17
-Los Chiles,1358.86,23735,17.47
-Belen,12.15,21633,1780.49
-San Isidro,26.96,20633,765.32
-Orotina,141.92,20341,143.33
-Acosta,342.24,20209,59.05
-Flores,6.96,20037,2878.88
-Tilaran,638.39,19640,30.76
-Bagaces,1273.49,19536,15.34
-La Cruz,1383.9,19181,13.86
-Valverde Vega,120.25,18085,150.4
-Abangares,675.76,18039,26.69
-Garabito,316.31,17229,54.47
-Tarrazu,297.5,16280,54.72
-Parrita,478.79,16115,33.66
-Guatuso,758.32,15508,20.45
-Jimenez,286.43,14669,51.21
-Alvarado,81.06,14312,176.56
-Montes de Oro,244.76,12950,52.91
-Zarcero,155.13,12205,78.68
-Leon Cortes,120.8,12200,100.99
-Nandayure,565.59,11121,19.66
-Rio Cuarto,254.2,11074,0
-Hojancha,261.42,7197,27.53
-Dota,400.22,6948,17.36
-San Mateo,125.9,6136,48.74
-Turrubares,415.29,5512,13.27
+Canton,Area,Poblacion,Densidad,Provincia
+San Jose,44.62,288054,6445.71,San Jose
+Alajuela,388.43,254886,656.2,Alajuela
+Desamparados,118.26,208411,1751.31,San Jose
+San Carlos,3347.98,163745,48.91,Alajuela
+Cartago,287.77,147898,513.95,Cartago
+Perez Zeledon,1905.51,134534,70.6,San Jose
+Pococi,2403.49,125962,52.41,Limon
+Heredia,282.6,123616,437.42,Heredia
+Puntarenas,1842.33,115019,62.43,Puntarenas
+Goicoechea,31.5,115084,3653.46,San Jose
+La Union,44.83,99399,2217.24,Cartago
+Limon,1765.79,94415,53.47,Limon
+San Ramon,1018.64,80566,79.09,Alajuela
+Alajuelita,21.17,77603,3665.71,San Jose
+Turrialba,1642.67,69616,42.38,Cartago
+Grecia,141.52,65824,465.12,Alajuela
+Curridabat,15.95,65206,4088.15,San Jose
+Tibas,8.15,64842,7956.07,San Jose
+Liberia,1436.47,62987,43.85,Guanacaste
+Vasquez de Coronado,222.2,60486,272.21,San Jose
+Aserri,167.1,57892,346.45,San Jose
+Paraiso,411.91,57743,140.18,Cartago
+Sarapiqui,2140.54,57147,26.7,Heredia
+Siquirres,860.19,56786,66.02,Limon
+Moravia,28.62,56919,1988.78,San Jose
+Escazu,34.39,56509,1643.18,San Jose
+Santa Cruz,1312.27,55104,41.99,Guanacaste
+Nicoya,1333.68,50825,38.11,Guanacaste
+Montes de Oca,15.16,49132,3240.9,San Jose
+Santa Ana,61.42,49123,799.79,San Jose
+San Rafael,48.39,45965,949.89,Heredia
+Oreamuno,202.31,45473,224.77,Cartago
+Buenos Aires,2384.22,45244,18.98,Puntarenas
+Upala,1580.67,43953,27.81,Alajuela
+Naranjo,126.62,42713,337.33,Alajuela
+Corredores,620.6,41831,67.4,Puntarenas
+El Guarco,167.69,41793,249.23,Cartago
+Guacimo,576.48,41266,71.58,Limon
+Barva,53.8,40660,755.76,Heredia
+Santo Domingo,24.84,40072,1613.2,Heredia
+Golfito,1753.96,39150,22.32,Puntarenas
+Coto Brus,933.91,38453,41.17,Puntarenas
+Matina,772.64,37721,48.82,Limon
+Carrillo,577.54,37122,64.28,Guanacaste
+Santa Barbara,53.21,36243,681.13,Heredia
+Palmares,38.06,34716,912.1,Alajuela
+Puriscal,553,33004,59.68,San Jose
+Talamanca,2809.93,30712,10.93,Limon
+Osa,1930.24,29433,15.25,Puntarenas
+Poas,73.84,29199,395.44,Alajuela
+Esparza,216.8,28644,132.12,Puntarenas
+San Pablo,7.53,27671,3674.77,Heredia
+Quepos,543.77,26861,49.4,Puntarenas
+Mora,162.04,26294,162.27,San Jose
+Canas,682.2,26201,38.41,Guanacaste
+Atenas,127.19,25460,200.17,Alajuela
+Los Chiles,1358.86,23735,17.47,Alajuela
+Belen,12.15,21633,1780.49,Heredia
+San Isidro,26.96,20633,765.32,Heredia
+Orotina,141.92,20341,143.33,Alajuela
+Acosta,342.24,20209,59.05,San Jose
+Flores,6.96,20037,2878.88,Heredia
+Tilaran,638.39,19640,30.76,Guanacaste
+Bagaces,1273.49,19536,15.34,Guanacaste
+La Cruz,1383.9,19181,13.86,Guanacaste
+Valverde Vega,120.25,18085,150.4,Alajuela
+Abangares,675.76,18039,26.69,Guanacaste
+Garabito,316.31,17229,54.47,Puntarenas
+Tarrazu,297.5,16280,54.72,San Jose
+Parrita,478.79,16115,33.66,Puntarenas
+Guatuso,758.32,15508,20.45,Alajuela
+Jimenez,286.43,14669,51.21,Cartago
+Alvarado,81.06,14312,176.56,Cartago
+Montes de Oro,244.76,12950,52.91,Puntarenas
+Zarcero,155.13,12205,78.68,Alajuela
+Leon Cortes,120.8,12200,100.99,San Jose
+Nandayure,565.59,11121,19.66,Guanacaste
+Rio Cuarto,254.2,11074,0,Alajuela
+Hojancha,261.42,7197,27.53,Guanacaste
+Dota,400.22,6948,17.36,San Jose
+San Mateo,125.9,6136,48.74,Alajuela
+Turrubares,415.29,5512,13.27,San Jose
