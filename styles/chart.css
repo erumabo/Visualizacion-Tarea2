@@ -16,3 +16,10 @@
   position: absolute;
   left: 0;
 }
+
+.gliph {
+  opacity:0.4;
+}
+.gliph:hover{
+  opacity:1;
+}
