@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>D3</title>
+  <title>Proyecto D3</title>
   
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles/chart.css">
@@ -17,7 +17,7 @@
 
   <!-- Progra -->
   
-  <h2 style="margin-left:auto;margin-right:auto;text-align:center;">Cantones de Costa Rica</h2>
+  <h2 class="bg-primary" style="margin-left:auto;margin-right:auto;text-align:center;">Cantones de Costa Rica</h2>
   
   <div class="svg-container">
     <svg class="chart"></svg>
@@ -35,7 +35,7 @@
   
   <button class="control-btn btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dropdown-container">Ajustes</button>
   <div id="dropdown-container" class="collapse">
-  <div id="scroller" class="bg-primary" style="border-radius:8px 8px;display:inline-block">
+  <div id="scroller" class="bg-info" style="border-radius:8px 8px;display:inline-block">
     <label>Tamaño<input type="range" value="100" min="0" max="100" id="sizeSlider"></label>
   </div>
   <!--div class="dropup">
@@ -58,8 +58,8 @@
   <div class="dropup">
     <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" type="button">Efectos<span class="caret"></span></button>
     <ul id="tipoEfecto" class="dropdown-menu">
-      <li><a href="#3D">3D</a></li>
-      <li><a href="#reflejo">Reflejos</a></li>
+      <li><a id="a_3D">3D</a></li>
+      <li><a id="a_reflejo">Reflejos</a></li>
     </ul>
   </div>
   </div>
@@ -70,8 +70,8 @@
   </div>
 
   <script type="unknown" id="info-template">
-<div class="card bg-info">
-  <div class="card-header">
+<div class="card">
+  <div class="card-header bg-info">
     <button type="button" class="close" aria-label="Close" onclick="$('#info').hide();">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -84,8 +84,7 @@
     <label>Densidad {{densidad}}</label><br>
     <input type="color" id="idColor" value="{{fill}}"><label>Color</label>
   </div>
-  <div class="card-footer">
-    <i><small>made with mustache</small></i>
+  <div class="card-footer bg-info">
   </div>
 </div>
   </script>

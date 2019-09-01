@@ -62,22 +62,22 @@ var canvas = d3.select(".chart")
                .call(zoom);
 
 /*un backgrpund para ver el tamaño real del canvas, posteriormente se elimina y queda el background del div que lo contiene*/
-canvas.append("rect")
+/*canvas.append("rect")
   .classed("back",true)
   .attr("width","100%")
   .attr("height","100%")
   .attr("fill","lightcyan"); //esto para tener un background, para ref visual
-
+*/
 $('#leyenda').html(Mustache.render(
-`<div class="card-header"><h4>Colores por provincia</h4></div>
+`<div class="card-header bg-info"><h4>Colores por provincia</h4></div>
 <div class="card-body">
-<div style="background-color:{{San Jose}}" class="color-text"><label style="color:#ffffff;opacity:1">San Jose</label></div>
-<div style="background-color:{{Alajuela}}" class="color-text"><label style="color:#000000;opacity:1">Alajuela</label></div>
-<div style="background-color:{{Cartago}}" class="color-text"><label style="color:#000;opacity:1">Cartago</label></div>
-<div style="background-color:{{Heredia}}" class="color-text"><label style="color:#000;opacity:1">Heredia</label></div>
-<div style="background-color:{{Limon}}" class="color-text"><label style="color:#ffffff;opacity:1">Limon</label></div>
-<div style="background-color:{{Puntarenas}}" class="color-text"><label style="color:#000;opacity:1">Puntarenas</label></div>
-<div style="background-color:{{Guanacaste}}" class="color-text"><label style="color:#000;opacity:1">Guanacaste</label></div>
+<div style="background-color:{{San Jose}}" class="color-text"><label style="color:#ffffff;">San Jose</label></div>
+<div style="background-color:{{Alajuela}}" class="color-text"><label style="color:#000000;">Alajuela</label></div>
+<div style="background-color:{{Cartago}}" class="color-text"><label style="color:#000;">Cartago</label></div>
+<div style="background-color:{{Heredia}}" class="color-text"><label style="color:#000;">Heredia</label></div>
+<div style="background-color:{{Limon}}" class="color-text"><label style="color:#ffffff;">Limon</label></div>
+<div style="background-color:{{Puntarenas}}" class="color-text"><label style="color:#000;">Puntarenas</label></div>
+<div style="background-color:{{Guanacaste}}" class="color-text"><label style="color:#000;">Guanacaste</label></div>
 `,colores)
 );
 

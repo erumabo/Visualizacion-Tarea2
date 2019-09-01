@@ -1,16 +1,18 @@
+body {
+  background-color:#226666;
+}
+
 .svg-container {
-  /*display: inline-block;
-  position: relative;*/
   width: 860px;
-  height: 460px; /* 4:3 ratio*/
+  height: 460px;
   vertical-align: top;
   overflow: hiden;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightcyan;
-  border: 2px solid tomato;
+  background-color: #FFE3AA;
   text-align:center;
   float:left;
+  border: 4px solid #003333;
 }
 .svg-content-responsive {
   display: inline-block;
@@ -19,7 +21,7 @@
 }
 
 .gliph {
-  opacity:0.4;
+  opacity:0.6;
 }
 .gliph:hover{
   opacity:1;
